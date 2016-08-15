@@ -15,8 +15,46 @@
           <h3>Galvanize Eats</h3>
         </header>
       </div>
-      <main>
-        
+      <main class="row">
+        <section class="seven columns offset-by-one menu">
+          <form>
+            <div class="menu-items">
+
+            </div>
+            <label>How many of those do you want?<br>
+              <input type="number" name="quantity" value="1" min="1" max="99">
+            </label>
+            <button type="submit" class="menu-select">Add Item(s)</button>
+            <label>What's your name, what's your sign(we just need your name)?
+              <input type="text" class="name" name="name" placeholder="Bill F#$@in' Murray">
+            </label>
+            <label>You seem nice, can I get your number?
+              <input type="tel" class="tele" name="tele" placeholder="281-330-8004">
+            </label>
+            <label>I'm no creep, where do you live?
+              <input type="text" class="address" name="address" placeholder="13 Deadend Road">
+            </label>
+            <button type="submit" class="order-submit">Deliver My Food Already</button>
+          </form>
+        </section>
+        <section class="three columns order">
+          <div class="selection">
+          </div>
+          <table class="money">
+            <tr>
+              <td>Subtotal</td>
+              <td class="subtotal">$00.00</td>
+            </tr>
+            <tr>
+              <td>Tax</td>
+              <td class="tax">$00.00</td>
+            </tr>
+            <tr>
+              <td><strong>Grand Total</strong></td>
+              <td class="grand">$00.00</td>
+            </tr>
+          </table>
+        </section>
       </main>
     </div><!--ambientBackground end-->
     <footer>

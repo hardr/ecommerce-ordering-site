@@ -1,6 +1,6 @@
 /* add custom styles */
 html, body {
-  background-color: #E3DC88;
+  background-color: rgba(227, 220, 136, 1);
   width: 100%;
   font-family: Open Sans;
 }
@@ -30,12 +30,12 @@ header h3 {
   float: right;
   margin-right: 10%;
   margin-top: 3%;
-  color: #E3DC88;
+  color: rgba(227, 220, 136, 1);
 }
 
 .hero p {
   font-size: 6vw;
-  color: #E3DC88;
+  color: rgba(227, 220, 136, 1);
   text-align: center;
   margin-top: 125px;
 }
@@ -43,9 +43,9 @@ header h3 {
 .hero a {
   font-size: 2vw;
   text-align: center;
-  color: #E3DC88;
+  color: rgba(227, 220, 136, 1);
   background-color: rgba(178, 53, 44, .6);
-  border: 2px solid #E3DC88;
+  border: 2px solid rgba(227, 220, 136, 1);
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -55,7 +55,7 @@ header h3 {
 
 .hero a:hover {
   color: rgb(178, 53, 44);
-  background-color: #E3DC88;
+  background-color: rgba(227, 220, 136, 1);
   border: 2px solid rgb(178, 53, 44);
 }
 
@@ -74,7 +74,7 @@ header h3 {
 footer {
   height: 50px;
   width: 100%;
-  color: #E3DC88;
+  color: rgba(227, 220, 136, 1);
   background-color: black;
   display: flex;
   align-items: center;
@@ -89,4 +89,21 @@ footer p span {
   height: 15px;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+/*orders page */
+
+.order {
+  background-color: rgba(227, 220, 136, .7);
+  border-radius: 15px;
+  text-align: right;
+  margin-bottom: 8%;
+}
+
+.selection {
+  min-height: 450px;
+}
+
+.money {
+  margin: 0 auto;
 }
