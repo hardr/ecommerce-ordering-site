@@ -1,5 +1,7 @@
 Q1 assessment - Ryan Harings
 
+https://hardr.github.io/galvanize_eats/
+
 https://github.com/hardr/galvanize_eats
 
 Galvanize Eats:

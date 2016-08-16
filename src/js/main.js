@@ -7,6 +7,9 @@ $(document).on('ready', function() {
   var $menu;
   var selectId = 1;
 
+  var subtotal = 0;
+  var order = {};
+
   $.ajax({
     method: 'GET',
     dataType: 'json',
@@ -35,9 +38,6 @@ $(document).on('ready', function() {
     $('#' + selectId).addClass('item-selected').removeClass('item-select');
   });
 
-  var subtotal = 0;
-  var order = {};
-
   $('.menu-select').on('click', function(e) {
     e.preventDefault();
     $menu.forEach(function(each, index) {
@@ -52,7 +52,7 @@ $(document).on('ready', function() {
           $('td.subtotal').text('$' + subtotal);
           $('td.tax').text('$' + taxes);
           $('td.grand').text('$' + grandTotal);
-          order[qty + '_' + $menu[index].name] = $menu[index].price * 2;
+          order[qty + '_' + $menu[index].name] = $menu[index].price * qty;
           count++;
         }
       }
@@ -75,7 +75,8 @@ $(document).on('ready', function() {
     $.ajax({
       method: 'POST',
       dataType: 'json',
-      url: ajaxPost
+      url: ajaxPost,
+      data: order
     }).done(function (results) {
       var confirm = results[responseText];
       console.log(confirm);
