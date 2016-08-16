@@ -46,12 +46,13 @@ $(document).on('ready', function() {
         var count = 0;
         while (count < qty) {
           $('.selection').append('<div class="on-order" id="' + $menu[index].id + '">' + $menu[index].name + '<span>$' + $menu[index].price + '</span></div>');
-          subtotal += $menu[index].price;
+          subtotal += parseFloat($menu[index].price.toFixed(2));
           var taxes = (subtotal * 0.083).toFixed(2);
           var grandTotal = (subtotal + parseFloat(taxes)).toFixed(2);
           $('td.subtotal').text('$' + subtotal);
           $('td.tax').text('$' + taxes);
-          $('td.grand').text('$' + grandTotal);            order[qty + '_' + $menu[index].name] = $menu[index].price * 2;
+          $('td.grand').text('$' + grandTotal);
+          order[qty + '_' + $menu[index].name] = $menu[index].price * 2;
           count++;
         }
       }
@@ -93,10 +94,3 @@ const PI = 3.14;
 function sum(num1, num2) {
   return parseInt(num1) + parseInt(num2);
 }
-
-// function hasKeyValuePair(obj) {
-//   console.log(obj.id);
-//   if (obj.id === selectId) {
-//     return true;
-//   };
-// }
