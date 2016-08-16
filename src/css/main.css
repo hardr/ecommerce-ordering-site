@@ -92,18 +92,120 @@ footer p span {
 }
 
 /*orders page */
+.menu {
+  display: inline-block;
+  float: left;
+}
+
+.menu-items {
+  background-color: rgba(227, 220, 136, .7);
+  border-radius: 15px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+div.columns h4 {
+  margin-bottom: 5px;
+}
+
+div.columns div {
+  margin-bottom: 10px;
+}
+
+h4.misc, div.misc {
+  display: none;
+}
+
+
+.item-select span, .item-selected span {
+  margin-left: 20px;
+}
+
+.item-select:hover, .item-selected {
+  border: 2px solid rgb(178, 53, 44);
+  border-radius: 10px;
+}
+
+.qty-input {
+  margin-top: 25px;
+}
+
+.menu-select {
+  color: rgba(227, 220, 136, 1);
+  background-color: rgb(178, 53, 44);
+  border: 2px solid rgba(227, 220, 136, 1);
+  margin-left: 200px;
+}
+
+.menu-select:hover {
+  color: rgb(178, 53, 44);
+  background-color: rgba(227, 220, 136, 1);
+  border: 2px solid rgb(178, 53, 44);
+}
 
 .order {
   background-color: rgba(227, 220, 136, .7);
   border-radius: 15px;
-  text-align: right;
   margin-bottom: 8%;
+  text-align: center;
 }
 
 .selection {
-  min-height: 450px;
+  min-height: 350px;
+}
+
+.on-order {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.on-order span {
+  margin-left: 10px;
 }
 
 .money {
   margin: 0 auto;
+  text-align: right;
+}
+
+label {
+  color: rgba(227, 220, 136, 1);
+}
+
+.name-label {
+  margin-top: 25px;
+}
+
+input[type="number"] {
+  color: rgba(227, 220, 136, 1);
+  background-color: rgb(178, 53, 44);
+  border: 2px solid rgba(227, 220, 136, 1);
+}
+
+input[type="text"] {
+  color: rgba(227, 220, 136, 1);
+  background-color: rgb(58, 112, 163);
+}
+
+input[type="tel"] {
+  color: rgba(227, 220, 136, 1);
+  background-color: rgb(58, 112, 163);
+}
+
+.add-label {
+  color: rgba(227, 220, 136, 1);
+  text-shadow: #000 1px -2px 3px;
+}
+
+.order-submit {
+  color: rgba(227, 220, 136, 1);
+  background-color: rgba(58, 112, 163, .8);
+  margin-left: 65px;
+  border: 2px solid rgba(227, 220, 136, 1);
+}
+
+.order-submit:hover {
+  color: rgba(227, 220, 136, 1);
+  background-color: rgba(58, 112, 163, .6);
+  border: 2px solid rgba(227, 220, 136, 1);
 }

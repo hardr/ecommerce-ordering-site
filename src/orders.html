@@ -18,26 +18,39 @@
       <main class="row">
         <section class="seven columns offset-by-one menu">
           <form>
-            <div class="menu-items">
-
+            <div class="row menu-items">
+              <div class="six columns">
+                <h4>Burgers</h4>
+                <div class="burger menu-type"></div>
+              </div>
+              <div class="six columns">
+                <h4 class="pizza">Pizza</h4>
+                <div class="pizza menu-type"></div>
+              </div>
+              <div class="four columns">
+                <h4 class="misc">Misc.</h4>
+                <div class="misc menu-type"></div>
+              </div>
             </div>
-            <label>How many of those do you want?<br>
-              <input type="number" name="quantity" value="1" min="1" max="99">
+            <label class="qty-input">How many of those do you want?<br>
+              <input id="quantity" type="number" name="quantity" value="1" min="1" max="99">
+              <button type="submit" class="menu-select">Add Item(s)</button>
             </label>
-            <button type="submit" class="menu-select">Add Item(s)</button>
-            <label>What's your name, what's your sign(we just need your name)?
+            <label class="name-label">What's your name, what's your sign (we just need your name)?<br>
               <input type="text" class="name" name="name" placeholder="Bill F#$@in' Murray">
             </label>
-            <label>You seem nice, can I get your number?
+            <label class="tel-label">You seem nice, can I get your number?<br>
               <input type="tel" class="tele" name="tele" placeholder="281-330-8004">
             </label>
-            <label>I'm no creep, where do you live?
-              <input type="text" class="address" name="address" placeholder="13 Deadend Road">
+            <label class="add-label">I'm no creep, where do you live?<br>
+              <input type="text" class="address" name="address" placeholder="244 South Prairie Ave">
+              <button type="submit" class="order-submit">Deliver My Food Already</button>
             </label>
-            <button type="submit" class="order-submit">Deliver My Food Already</button>
+
           </form>
         </section>
         <section class="three columns order">
+          <h4>Your Eats</h4>
           <div class="selection">
           </div>
           <table class="money">
